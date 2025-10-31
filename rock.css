@@ -1,0 +1,97 @@
+
+ body{
+    background-image: url(rockbg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }   
+.main-div
+{
+        display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+   
+    margin: 4px;
+    
+}
+#rock-div>p{
+     padding-bottom:23px;
+     margin-bottom: 18px;
+
+    font-size: 3rem;
+    font-weight: 570;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(245, 244, 248, 0.941);
+}
+.section-div{
+            width: fit-content;
+            height: fit-content;
+            margin: 6px;
+            
+}
+button{
+padding: 12px;
+margin-inline: 15px;
+width: 90px;
+height: 7rem;
+border-radius: 12px;
+font-size: 39px;
+border: none;
+
+box-shadow: 2px 2px 3px rgba(89, 0, 255, 0.779);
+transition: background-color 0.2s;
+background-image: linear-gradient(rgba(60, 15, 101, 0.823),rgba(21, 21, 188, 0.943));
+
+}
+
+#playerdisp,#comdisp,#resdisp{
+     
+     margin: 8px;
+     font-size: 2rem;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 270;
+     color: rgba(255, 255, 255, 0.97);
+}
+#resdisp{
+    visibility: hidden;
+     opacity: 0;
+     
+}
+
+#resdisp.show {
+    color: rgba(255, 255, 255, 0.97);
+  visibility: visible;
+  animation: game 400ms linear 1 forwards; 
+}
+@keyframes game {
+   from {
+     opacity: 0;
+      transform: translateY(6px) scale(.98);
+     }
+  to   {
+     opacity: 1; 
+    transform: translateY(0)  scale(1);
+ }
+
+    
+}
+
+button:hover{
+animation: button 2s ease-in-out 1;
+   background-image: linear-gradient(rgba(59, 15, 101, 0.881),rgba(21, 21, 188, 0.956));
+}
+@keyframes button {
+    0%{
+        transform: scale(0.97);
+    }
+    67%{
+        transform: scale(1.02);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
