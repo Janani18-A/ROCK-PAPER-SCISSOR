@@ -39,4 +39,4 @@ Play against the computer — choose wisely and see if you can win!
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   
+   https://github.com/Janani18-A/ROCK-PAPER-SCISSOR.git
